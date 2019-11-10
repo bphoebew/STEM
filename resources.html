@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Resources | S(HE)TEM</title>
+	<!-- External Stylesheets -->
+	<link href="https://fonts.googleapis.com/css?family=Quicksand:700|Source+Code+Pro:600i&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+	<link rel = "stylesheet" href = "resources.css">
+</head>
+<body>
+
+	<div id = "otherCovering" class ="covering">
+</div>
+<div id="mySidenav" class="sidenav">
+<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+<a href="index.html">Home</a>
+<a href="history.html">History</a>
+<a href="projects.html">DIY Projects</a>
+<a href="interviews.html">Interviews</a>
+<a href="quizzes.html">Quizzes</a>
+<a href="resources.html">Resources</a>
+<a href="team.html">Team & The Process</a>
+</div>
+
+<div class = "flexAll">
+	<h1 class = "resource"> Resources </h1>
+	<input type="image" src="https://library.kissclipart.com/20180925/hfq/kissclipart-writing-resources-clipart-writing-citation-clip-ar-30f70e680b2bfd44.png" name="button" class="logo"/>
+</div>
+	<!-- Our web map and content will go here -->
+	<div class = "container">
+	<h2 class = "title"> Resources around the United States </h2>
+	<div id="map" style="width: 50%; height: 500px;"></div>
+</div>
+<h2 class = "title"> Online Resources </h2>
+	<h3 class = "subtitle"> Want To Learn How To Code? </h3>
+	<a class = "clear" href = "https://www.khanacademy.org/computing/computer-programming" target="_blank"><p class = "web"> Khan Academy </p></a>
+	<a class = "clear" href = "https://code.org/" target="_blank"><p class = "web"> Code.org </p></a>
+	<a class = "clear" href = "https://scratch.mit.edu/" target="_blank"><p class = "web"> Scratch </p></a>
+	<a class = "clear" href = "https://www.w3schools.com/" target="_blank"><p class = "web"> W3Schools </p></a>
+	<h3 class = "subtitle"> Want To Learn More About Science? </h3>
+	<a class = "clear" href = "http://www.sciencekids.co.nz/gamesactivities.html" target="_blank"><p class = "web"> Science Kids </p></a>
+	<a class = "clear" href = "https://www.brainpop.com/science/" target="_blank"><p class = "web"> BrainPop </p></a>
+	<a class = "clear" href = "https://www.biointeractive.org/" target="_blank"><p class = "web"> BioInteractive </p></a>
+
+	<h3 class = "subtitle"> Want To Learn More About Math? </h3>
+	<a class = "clear" href = "https://www.ipracticemath.com/learn" target="_blank"><p class = "web"> IPractice Math </p></a>
+	<a class = "clear" href = "https://www.brainpop.com/math/" target="_blank"><p class = "web"> BrainPop </p></a>
+	<a class = "clear" href = "https://www.khanacademy.org/math" target="_blank"><p class = "web"> Khan Academy </p></a>
+
+	<!-- Add the Leaflet JavaScript library -->
+	 <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+	<script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.0/paper-core.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"></script>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+			<script type="text/javascript" src="resources.js"></script>
+	<script>
+    	// Create variable to hold map element, give initial settings to map
+    	var map = L.map('map',{ center: [30, -100], zoom: 4});
+
+    	// Add OpenStreetMap tile layer to map element
+		L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', { attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>' }).addTo(map);
+
+		var myDataPoint = L.marker([40.764332,-73.998711]).addTo(map);
+		var myDataPoint1 = L.marker([34.412739,-118.513451]).addTo(map);
+		var myDataPoint2 = L.marker([42.359245,-71.093140]).addTo(map);
+		var myDataPoint3 = L.marker([34.006302,-118.454338]).addTo(map);
+		var myDataPoint4 = L.marker([37.427662,-122.170059]).addTo(map);
+    var myDataPoint5 = L.marker([41.931890,-88.767190]).addTo(map);
+    var myDataPoint6 = L.marker([42.273960,-71.809677]).addTo(map);
+    var myDataPoint7 = L.marker([42.255200,-72.574170]).addTo(map);
+    var myDataPoint8 = L.marker([37.437038,-122.157051]).addTo(map);
+    var myDataPoint9 = L.marker([37.861040,-122.269540]).addTo(map);
+    var myDataPoint10 = L.marker([34.135880,-118.127792]).addTo(map);
+    var myDataPoint11 = L.marker([33.642286,-117.840451]).addTo(map);
+    var myDataPoint12 = L.marker([39.676609,-104.959457]).addTo(map);
+    var myDataPoint13 = L.marker([33.771309,-84.392929]).addTo(map);
+    var myDataPoint14 = L.marker([42.247940,-87.830650]).addTo(map);
+    var myDataPoint15 = L.marker([42.393108,-71.220337]).addTo(map);
+    var myDataPoint16 = L.marker([42.276840,-83.735023]).addTo(map);
+    var myDataPoint17 = L.marker([44.940311,-93.170959]).addTo(map);
+    var myDataPoint18 = L.marker([40.719890,-74.364620]).addTo(map);
+    var myDataPoint19 = L.marker([40.034931,-75.340553]).addTo(map);
+    var myDataPoint20 = L.marker([36.148739,-86.803574]).addTo(map);
+    var myDataPoint21 = L.marker([29.716610,-95.402618]).addTo(map);
+    var myDataPoint22 = L.marker([47.653871,-122.307626]).addTo(map);
+    var myDataPoint23 = L.marker([42.316093,-72.639599]).addTo(map);
+    var myDataPoint24 = L.marker([37.554650,-79.080540]).addTo(map);
+    var myDataPoint25 = L.marker([43.609620,-116.200520]).addTo(map);
+    var myDataPoint26 = L.marker([32.286030,-106.744110]).addTo(map);
+    var myDataPoint27 = L.marker([39.541088,-119.817162]).addTo(map);
+    var myDataPoint28 = L.marker([41.312382,-105.579391]).addTo(map);
+    var myDataPoint29 = L.marker([33.448181,-112.081284]).addTo(map);
+    var myDataPoint30 = L.marker([41.582699,-93.620720]).addTo(map);
+
+		// // Create line feature for Mass Ave Bridge, style and add to map
+		// var myDataLine = L.polyline([[42.357227, -71.092631], [42.351411, -71.089723]],
+		// 	{color: 'red', weight: 10}).addTo(map);
+
+		// Create area feature for MIT, style and add to map
+		var myArea = L.polygon([[42.353770, -71.103606], [42.355447, -71.104475],
+		    [42.362681, -71.089830], [42.361829, -71.079230]],
+		    {color: 'blue', weight: 4}).addTo(map);
+
+        // Bind popup to data point object
+        myDataPoint.bindPopup("<h3>GOALS for Girls Summer Intensive</h3><p>A free, 6-week program for 8th & 9th grade girls living in NYC focused on aerospace science, Earth science, & engineering.</p>"+'<a href="https://www.intrepidmuseum.org/education/goals-for-girls">Website</a>');
+				myDataPoint1.bindPopup("<h4>Girls Who Code</h4><p>A free​ ​7-week introductory computer science ​program ​for​ ​10th-11th grade girls. Note: Exact locations have not been finalized yet but takes place all over the US.</p>"+'<a href="https://girlswhocode.com/summer-immersion-programs/">Website</a>');
+				myDataPoint2.bindPopup("<h5>Women's Technology Program (WTP)</h5><p>A 4-week academic program at MIT for female high school rising seniors who love & excel at math & science but have little or no background in engineering and computer science.</p>"+'<a href="https://www.eecs.mit.edu/outreach/womens-technology-program">Website</a>');
+				myDataPoint3.bindPopup("<h2>Kode With Klossy</h2><p>A free 2-week bootcamp for girls, ages 13-18, that teaches web/app development. Note: Exact locations have not been finalized yet but takes place all over the US.</p>"+'<a href="https://www.kodewithklossy.com/program">Website</a>');
+				myDataPoint4.bindPopup("<h1>Education Unlimited Intro to Engineering</h1><p>An engineering camp at Stanford Univeristy specifically for 4th and 5th grade girls, but it costs between $1,775 and $2,435.</p>"+'<a href="https://www.educationunlimited.com/camp-sessions/display/camp/girls-intro-engineering">Website</a>');
+        myDataPoint5.bindPopup("<h6>Northern Illinois University STEM Divas</h6><p>Northern Illinois University hosts three summer STEM camps for girls going into grades 2–5.</p>"+'<a href="https://www.educationunlimited.com/camp-sessions/display/camp/girls-intro-engineering">Website</a>');
+        myDataPoint6.bindPopup("<h7>Spark at Worcester Polytechnic Institute</h7><p>This summer program is for kids entering 4th-6th grade & focuses on robotics, music technology, and other STEM fields.</p>"+'<a href="https://www.wpi.edu/academics/pre-collegiate/summer/stem-day/spark-program">Website</a>');
+        myDataPoint7.bindPopup("<h8>Mt. Holyoke iDesign Workshop For Middle School Girls</h8><p>This summer program teaches young women how to create and program smart wearables.</p>"+'<a href="https://www.mtholyoke.edu/professional-graduate/courses/idesign">Website</a>');
+        myDataPoint8.bindPopup("<h9>Alexa Café - Palo Alto High School</h9><p>An all-girls program, for 10-15 year olds, that blends tech, entrepreneurship, & social impact in a fresh, café-like setting.</p>"+'<a href="https://www.idtech.com/alexa-cafe">Website</a>');
+        myDataPoint9.bindPopup("<h9>Alexa Café - UC Berkeley</h9><p>An all-girls program, for 10-15 year olds, that blends tech, entrepreneurship, & social impact in a fresh, café-like setting.</p>"+'<a href="https://www.idtech.com/alexa-cafe">Website</a>');
+        myDataPoint10.bindPopup("<h8>Alexa Café - California Institute of Technology</h8><p>An all-girls program, for 10-15 year olds, that blends tech, entrepreneurship, & social impact in a fresh, café-like setting.</p>"+'<a href="https://www.idtech.com/alexa-cafe">Website</a>');
+        myDataPoint11.bindPopup("<h8>Alexa Café - UC Irvine</h8><p>An all-girls program, for 10-15 year olds, that blends tech, entrepreneurship, & social impact in a fresh, café-like setting.</p>"+'<a href="https://www.idtech.com/alexa-cafe">Website</a>');
+        myDataPoint12.bindPopup("<h8>Alexa Café - University of Denver</h8><p>An all-girls program, for 10-15 year olds, that blends tech, entrepreneurship, & social impact in a fresh, café-like setting.</p>"+'<a href="https://www.idtech.com/alexa-cafe">Website</a>');
+        myDataPoint13.bindPopup("<h8>Alexa Café - Georgia Institute of Technology</h8><p>An all-girls program, for 10-15 year olds, that blends tech, entrepreneurship, & social impact in a fresh, café-like setting.</p>"+'<a href="https://www.idtech.com/alexa-cafe">Website</a>');
+        myDataPoint14.bindPopup("<h8>Alexa Café - Lake Forest College</h8><p>An all-girls program, for 10-15 year olds, that blends tech, entrepreneurship, & social impact in a fresh, café-like setting.</p>"+'<a href="https://www.idtech.com/alexa-cafe">Website</a>');
+        myDataPoint15.bindPopup("<h8>Alexa Café - Bentley University</h8><p>An all-girls program, for 10-15 year olds, that blends tech, entrepreneurship, & social impact in a fresh, café-like setting.</p>"+'<a href="https://www.idtech.com/alexa-cafe">Website</a>');
+        myDataPoint16.bindPopup("<h8>Alexa Café - University of Michigan</h8><p>An all-girls program, for 10-15 year olds, that blends tech, entrepreneurship, & social impact in a fresh, café-like setting.</p>"+'<a href="https://www.idtech.com/alexa-cafe">Website</a>');
+        myDataPoint17.bindPopup("<h8>Alexa Café - Macalester College</h8><p>An all-girls program, for 10-15 year olds, that blends tech, entrepreneurship, & social impact in a fresh, café-like setting.</p>"+'<a href="https://www.idtech.com/alexa-cafe">Website</a>');
+        myDataPoint18.bindPopup("<h8>Alexa Café - Kent Place School</h8><pAn all-girls program, for 10-15 year olds, that blends tech, entrepreneurship, & social impact in a fresh, café-like setting.></p>"+'<a href="https://www.idtech.com/alexa-cafe">Website</a>');
+        myDataPoint19.bindPopup("<h8>Alexa Café - Villanova University</h8><p>An all-girls program, for 10-15 year olds, that blends tech, entrepreneurship, & social impact in a fresh, café-like setting.</p>"+'<a href="https://www.idtech.com/alexa-cafe">Website</a>');
+        myDataPoint20.bindPopup("<h8>Alexa Café - Vanderbilt University</h8><p>An all-girls program, for 10-15 year olds, that blends tech, entrepreneurship, & social impact in a fresh, café-like setting.</p>"+'<a href="https://www.idtech.com/alexa-cafe">Website</a>');
+        myDataPoint21.bindPopup("<h8>Alexa Café - Rice University</h8><p>An all-girls program, for 10-15 year olds, that blends tech, entrepreneurship, & social impact in a fresh, café-like setting.</p>"+'<a href="https://www.idtech.com/alexa-cafe">Website</a>');
+        myDataPoint22.bindPopup("<h8>Alexa Café - Univeristy of Washington</h8><p>An all-girls program, for 10-15 year olds, that blends tech, entrepreneurship, & social impact in a fresh, café-like setting.</p>"+'<a href="https://www.idtech.com/alexa-cafe">Website</a>');
+        myDataPoint23.bindPopup("<h8>Smith Summer Science and Engineering Program</h8><p>A 4-week residential summer program for girls entering grades 9, 10, 11, & 12 with strong interests in science and engineering. You will engage in hands-on research with Smith College faculty in life & physical sciences & in engineering.</p>"+'<a href="https://www.smith.edu/academics/precollege-programs/ssep">Website</a>');
+        myDataPoint24.bindPopup("<h8>Explore Engineering for High School Girls</h8><p>Working in teams with Sweet Briar engineering faculty & undergraduate engineering students, high school girls work on creative & fun design projects that are perfect for both experienced students & those completely new to engineering. </p>"+'<a href="">Website</a>');
+        myDataPoint25.bindPopup("<h1>STEM Girl Power</h1>The Discovery Center of Idaho hosts an all girls coding camp during the summer.<p></p>"+'<a href="https://www.dcidaho.org/stem-girl-power/">Website</a>');
+        myDataPoint26.bindPopup("<h8>New Mexico State University Summer Camps</h8><p>Students exiting 5th grade-8th grade are welcome to participate in robotics, math, & science camps here.</p>"+'<a href="https://stem.nmsu.edu/summer-camp/">Website</a>');
+        myDataPoint27.bindPopup("<h8>Girls Math & Technology Program at UNR</h8><p>A program for middle school girls that aims to increase their knowledge, skills, & confidence in mathematics, as well as technology use for mathematics learning.</p>"+'<a href="https://stempathways.epscorspo.nevada.edu/program/girls-math-technology-program-at-unr/">Website</a>');
+        myDataPoint28.bindPopup("<h8>Teton STEM Academy</h8><p>A camp for rising 9th, 10th, & 11th grade students from Wyoming that explores the science, math, & technology behind a return to the moon.</p>"+'<a href="http://wyomingspacegrant.org/k12programs/stemcamp/">Website</a>');
+        myDataPoint29.bindPopup("<h8>CAMP INNOVATION</h8><p>Arizona Science Center's CAMP INNOVATION inspires & engages curious minds through STEM (Science, Technology, Engineering, Mathematics) learning. Camps vary throughout the year & include themes such as Campfire Science, Wild Weather and Dinosaurs!</p>"+'<a href="https://www.azscience.org/events-programs/camp-innovation/">Website</a>');
+        myDataPoint30.bindPopup("<h8>SciGirls® Summer/Winter Camps</h8><p>Detais have not been announced yet.</p>"+'<a href="https://www.sciowa.org/girlsinscience/">Website</a>');
+        // Bind popup to area object
+        myArea.bindPopup("MIT Campus");
+
+
+        map.on('click', onMapClick);
+
+        // load GeoJSON from an external file
+		$.getJSON("data/coffee_cafes.geojson",function(data){
+		    // add GeoJSON layer to the map once the file is loaded
+		    L.geoJson(data,{
+				onEachFeature: function (feature, layer) {
+					layer.bindPopup(feature.properties.name);
+				}
+			}).addTo(map);
+		});
+	</script>
+</body>
+</html>

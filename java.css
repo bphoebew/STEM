@@ -1,0 +1,84 @@
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #fcf0ec;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 100px;
+  text-align: center;
+}
+.covering{
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 100px;
+  background-color: #A63446;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 0;
+}
+.sidenav a {
+  /* padding: 8px 8px 8px 32px; */
+  padding: 15px;
+  text-decoration: none;
+  font-size: 30px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+  font-family: 'Source Code Pro', monospace;
+}
+
+.sidenav a:hover{
+  color: #A63446;
+   /* text-shadow: 4px 4px #ff0000; */
+   text-shadow: 2px 2px #310A31;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 36px;
+}
+span{
+  position: fixed;
+  left: 20px;
+  top: 50%;
+  width: 30px;
+  height: 30px;
+}
+
+body{
+  background-color: #FCF0EC;
+}
+
+h1{
+  font-family: 'Quicksand', sans-serif;
+  text-align: center;
+  font-size: 70px;
+  color: #A63446;
+  text-shadow: 4px 4px #310A31;
+}
+
+div {
+  font-family: 'Source Code Pro', monospace;
+  font-size: 25px;
+  width: 1000px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+
+button{
+ font-size: 20px;
+ font-family: 'Source Code Pro', monospace;
+ padding: 10px;
+ margin: 20px;
+}

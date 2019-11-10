@@ -1,0 +1,155 @@
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #fcf0ec;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 100px;
+  text-align: center;
+}
+.covering{
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 100px;
+  background-color: #A63446;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 0;
+}
+.sidenav a {
+  /* padding: 8px 8px 8px 32px; */
+  padding: 15px;
+  text-decoration: none;
+  font-size: 30px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+  font-family: 'Source Code Pro', monospace;
+
+}
+
+.sidenav a:hover{
+  color: #A63446;
+   /* text-shadow: 4px 4px #ff0000; */
+   text-shadow: 2px 2px #310A31;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 36px;
+}
+
+span{
+  position: fixed;
+  left: 20px;
+  top: 50%;
+  width: 30px;
+  height: 30px;
+}
+
+body {
+  background: #fcf0ec;
+}
+
+h1{
+  text-align: center;
+  cursor: default;
+  font-size: 80px;
+  font-family: 'Quicksand', sans-serif;
+  -webkit-animation: slideIn 2s forwards;
+-moz-animation: slideIn 2s forwards;
+animation: slideIn 2s forwards;
+}
+
+h1:hover{
+  color: #A63446;
+ text-shadow: 5px 5px #310A31;
+}
+
+.logo{
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid black;
+  box-shadow: 0px 1px 3px rgba(51, 51, 51, 0.5);
+  -webkit-animation: slideIn 2s forwards;
+  -moz-animation: slideIn 2s forwards;
+  animation: slideIn 2s forwards;
+}
+
+.flexAll{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+input:focus{
+  outline:0;
+}
+
+.container{
+  margin: 50px;
+}
+
+h3{
+  font-size: 30px;
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+  -webkit-animation: slideIn 2s forwards;
+  -moz-animation: slideIn 2s forwards;
+  animation: slideIn 2s forwards;
+}
+p{
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Source Code Pro', monospace;
+  -webkit-animation: slideIn 2s forwards;
+  -moz-animation: slideIn 2s forwards;
+  animation: slideIn 2s forwards;
+}
+.test{
+  width: 50px;
+  height: 50px;
+}
+
+@-webkit-keyframes slideIn {
+  0% {
+    visibility: visible;
+    transform: translateX(-900px);
+  }
+  100% {
+    visibility: visible;
+    transform: translateX(0);
+  }
+}
+@-moz-keyframes slideIn {
+  0% {
+    visibility: visible;
+    transform: translateX(-900px);
+  }
+  100% {
+    visibility: visible;
+    transform: translateX(0);
+  }
+}
+@keyframes slideIn {
+  0% {
+    visibility: visible;
+    transform: translateX(-900px);
+  }
+  100% {
+    visibility: visible;
+    transform: translateX(0);
+  }
+}
