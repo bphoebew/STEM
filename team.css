@@ -177,6 +177,15 @@ img{
   margin-top: 100px;
   margin-bottom: 30px;
 }
+.containThree{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+.containT{
+  display: flex;
+  flex-direction: column-reverse;
+}
 .emailMeB {
   text-decoration: none;
   border: none;

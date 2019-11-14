@@ -145,6 +145,16 @@ animation: slideIn 2s forwards;
   font-size: 20px;
   visibility: hidden;
 }
+.code{
+  position: absolute;
+  top: 60%;
+  left: 70%;
+  width: 200px;
+  font-family: 'Source Code Pro', monospace;
+  text-align: center;
+  font-size: 20px;
+  visibility: hidden;
+}
 input:focus{
   outline: 0;
 }

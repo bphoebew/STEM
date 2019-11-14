@@ -78,6 +78,14 @@ h1:hover{
 .lego {
   font-size: 15px;
 }
+.flexSlide{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+iframe{
+  margin-bottom: 50px;
+}
 .marshLink:link {
   margin: 30px;
   font-family: 'Source Code Pro', monospace;
@@ -171,7 +179,7 @@ p {
   margin-right: auto;
 }
 h2 {
-  margin: 40px;
+  margin: 80px;
   font-family: 'Source Code Pro', monospace;
   font-size: 40px;
   display: block;
