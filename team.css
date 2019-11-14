@@ -232,6 +232,11 @@ img{
 .quest{
   font-size: 28px;
 }
+.wirePic{
+  width: 300px;
+  height: 500px;
+  margin: 86px;
+}
 @-webkit-keyframes slideIn {
   0% {
     visibility: visible;
