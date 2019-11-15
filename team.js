@@ -48,6 +48,8 @@ function showText(){
     containThree.append(`<img class = "wirePic" src = "processThree.jpg" />`);
   }else if (tracker == 1){
     tracker--;
+    containThree.empty();
+    containT.empty();
     phoebeContain.empty();
     bridgetContain.empty();
     containTwo.empty();

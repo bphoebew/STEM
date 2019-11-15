@@ -38,7 +38,7 @@
 .sidenav a:hover{
   color: #A63446;
    /* text-shadow: 4px 4px #ff0000; */
-   text-shadow: 2px 2px #310A31;
+  text-shadow: 2px 2px #310A31;
 }
 
 .sidenav .closebtn {
@@ -53,10 +53,10 @@ span{
   top: 50%;
   width: 30px;
   height: 30px;
+      font-family: none;
 }
 body {
   background: #fcf0ec;
-     font-style: normal;
 }
 body{
   background-color: #FCF0EC;
