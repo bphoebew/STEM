@@ -101,7 +101,7 @@ iframe{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 33%;
+  text-align: center;
 }
 .marshLink:visited {
   text-decoration: none;
@@ -135,7 +135,7 @@ iframe{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 33%;
+  text-align: center;
 }
 .icecreamLink:visited {
   text-decoration: none;
