@@ -10,6 +10,18 @@ function closeNav() {
   document.getElementById("otherCovering").style.width = "0";
 }
 
+$( document ).ready(function() {
+   $('.modalDialog').fadeIn();
+
+    $('.close').on('click', function(event) {
+	  	event.preventDefault();
+	  	/* Act on the event */
+
+        $('.modalDialog').fadeOut();
+
+	  });
+});
+
 var logo = $('.logo');
 var container = $('.container');
 var mission = $('h3');
