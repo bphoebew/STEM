@@ -1,3 +1,5 @@
+
+
 function openNav() {
   document.getElementById("otherCovering").style.width = "80%";
   document.getElementById("mySidenav").style.width = "50%";
@@ -10,17 +12,16 @@ function closeNav() {
   document.getElementById("otherCovering").style.width = "0";
 }
 
-$( document ).ready(function() {
-   $('.modalDialog').fadeIn();
+  $( document ).ready(function() {
+     $('.modalDialog').fadeIn();
 
-    $('.close').on('click', function(event) {
-	  	event.preventDefault();
-	  	/* Act on the event */
+      $('.close').on('click', function(event) {
+  	  	event.preventDefault();
+  	  	/* Act on the event */
 
-        $('.modalDialog').fadeOut();
-
-	  });
-});
+          $('.modalDialog').fadeOut();
+  	  });
+  });
 
 var logo = $('.logo');
 var container = $('.container');
