@@ -185,7 +185,7 @@ animation: slideIn 2s forwards;
 }
 .astronomy{
   position: absolute;
-  top: 48%;
+  top: 10%;
   left: 10%;
   width: 200px;
   font-family: 'Source Code Pro', monospace;
