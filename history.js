@@ -33,7 +33,7 @@ function showText(){
     hedyContain.append(`<h3>Hedy Lamarr</h3>`);
     hedyContain.append(`<img class = "bioPic" src = "hedy.jpg" />`);
     graceContain.append(`<h3>Grace Hopper</h3>`);
-    graceContain.append(`<img class = "bioPic" src = "grace.jpeg" />`)
+    graceContain.append(`<img class = "bioPic" src = "Grace-Hopper-1984.jpg" />`)
   }else if (tracker == 1){
     tracker--;
     adaContain.empty();
