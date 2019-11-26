@@ -212,7 +212,14 @@ h2:hover{
   margin-right: auto;
   width: 50%;
 }
-
+.stepHead{
+  font-size: 40px;
+    font-family: 'Source Code Pro', monospace;
+}
+.step{
+    font-size: 20px;
+    font-family: 'Source Code Pro', monospace;
+}
 .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
