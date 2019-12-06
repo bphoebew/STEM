@@ -118,6 +118,20 @@ h3{
   -moz-animation: slideIn 2s forwards;
   animation: slideIn 2s forwards;
 }
+.IG{
+  width: 40px;
+  height: 40px;
+  margin-top: 30px;
+  margin-left: 260px;
+  -webkit-animation: slideIn 2s forwards;
+  -moz-animation: slideIn 2s forwards;
+  animation: slideIn 2s forwards;
+}
+.flexCol{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 h3:hover{
   color: grey;
 }
