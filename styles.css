@@ -130,6 +130,7 @@ h1:hover{
 .logo{
   width: 350px;
   height: 350px;
+  background-color: white;
   object-fit: cover;
   border-radius: 50%;
   border: 5px solid black;
