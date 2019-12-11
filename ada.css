@@ -178,14 +178,16 @@ a:link{
   border-radius: 50%;
 }
 .realBio{
-  font-size: 25px;
+  font-size: 35px;
+  font-style: bold;
   margin:20px;
   padding-right: 40px;
   padding-left: 40px;
   text-align: center;
 }
 .questText{
-  font-size: 22px;
+  font-size: 24px;
+  font-style: bold;
   margin:10px;
   text-align: center;
 }
