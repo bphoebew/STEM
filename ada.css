@@ -132,6 +132,15 @@ h3{
   -moz-animation: slideIn 2s forwards;
   animation: slideIn 2s forwards;
 }
+.web{
+  width: 40px;
+  height: 40px;
+  margin-top: 30px;
+  margin-left: 30px;
+  -webkit-animation: slideIn 2s forwards;
+  -moz-animation: slideIn 2s forwards;
+  animation: slideIn 2s forwards;
+}
 .flexCol{
   display: flex;
   flex-direction: column;
@@ -201,6 +210,10 @@ a:link{
 .flexCen{
   display: flex;
   justify-content: center;
+}
+.flexRow{
+  display: flex;
+  flex-direction: row;
 }
 @-webkit-keyframes slideIn {
   0% {
