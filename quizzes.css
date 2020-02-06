@@ -189,6 +189,20 @@ p{
    -ms-transform: rotate(-10deg);
    -o-transform: rotate(-10deg);
 }
+.youKnow{
+  position: absolute;
+  top: 75%;
+  left: 75%;
+  width: 200px;
+  font-family: 'Source Code Pro', monospace;
+  text-align: center;
+  font-size: 20px;
+  visibility: hidden;
+  -webkit-transform: rotate(-5deg);
+   -moz-transform: rotate(-5deg);
+   -ms-transform: rotate(-5deg);
+   -o-transform: rotate(-5deg);
+}
 input:focus{
   outline: 0;
 }
