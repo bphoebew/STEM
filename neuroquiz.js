@@ -20,12 +20,15 @@ var subButton3 = $(".submit3");
 var container3 = $(".container3");
 var subButton4 = $(".submit4");
 var container4 = $(".container4");
+var subButton5 = $(".submit5");
+var container5 = $(".container5");
 
 subButton1.on("click", showResult1);
 subButton.on("click", showResult);
 subButton2.on("click", showResult2);
 subButton3.on("click", showResult3);
 subButton4.on("click", showResult4);
+subButton5.on("click", showResult5);
 
 function showResult(){
   console.log("math");
