@@ -166,6 +166,8 @@ p{
   margin-left: 20px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 a:visited {
   text-decoration: none;
@@ -204,8 +206,8 @@ a:link{
   font-size: 15px;
   margin:10px;
   text-align: center;
-  width: 700px;
-  margin-left: 22%;
+  width: 900px;
+  /* margin-left: 22%; */
 }
 .flexCen{
   display: flex;
