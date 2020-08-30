@@ -30,12 +30,12 @@ function showText(){
     bridgetContain.append(`<h3>Bridget Yang</h3>`);
     bridgetContain.append(`<img class = "bioPic" src="bridget.jpg" />`);
     bridgetContain.append(`<h4>Co-Founder & Web Developer</h4>`);
-    bridgetContain.append(`<p>I will be a senior in high school next year, and I'm from Los Angeles, California.I love all sciences (social and physical); I especially love sociology, psychology, chemistry, biology, and computer science!</p>`);
+    bridgetContain.append(`<p>I will be an incoming freshmen at Caltech, and I'm from Los Angeles, California. I love all sciences (social and physical); I especially love sociology, psychology, chemistry, biology, and computer science!</p>`);
     bridgetContain.append(`<p><a class="emailMeB" href="mailto:bridgetyang100@gmail.com">Contact</a></p>`);
     phoebeContain.append(`<h3>Phoebe Wongphatarakul</h3>`);
     phoebeContain.append(`<a href = "http://bphoebew.com/" target = "_blank"><img class = "bioPic" src = "phoebe.jpg" /></a>`);
     phoebeContain.append(`<h4>Co-Founder & Web Developer</h4>`);
-    phoebeContain.append(`<p>I will be a senior in high school next year, and I am from Los Angeles. I am an experienced coder, and I love to <br>run and bike. I also love science; especially computer science!</p>`);
+    phoebeContain.append(`<p>I will be an incoming freshmen at Georgia Tech, and I am from Los Angeles. I am an experienced coder, and I love to <br>run and bike. I also love science; especially computer science!</p>`);
     phoebeContain.append(`<p><a class="emailMeP" href="mailto:bphoebew@gmail.com">Contact</a></p>`);
     containTwo.append(`<h5>The Process </h5>`);
     containTwo.append(`<p class = "quest">What is the Problem?</p>`);
